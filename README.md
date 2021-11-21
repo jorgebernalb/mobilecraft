@@ -9,7 +9,7 @@ Víctor Javier López Moya
 # borrar este comentario y poner en dos renglones una descripción básica de cada uno de nosotros
 
 Javier Mauricio Carrillo Manrique
-# borrar este comentario y poner en dos renglones una descripción básica de cada uno de nosotros
+Administrador Industrial, trabajo para entidad pública y me gusta el desarrollo de las aplicaciones móviles
 
 Jorge Enrique Bernal
 Ingeniero electrónico, trabajando actualmente en una entidad pública en cargo provisional,
