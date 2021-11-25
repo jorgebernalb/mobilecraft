@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RecyclerViewPoi</string>
+    <string-array name="pois_array">
+        <item>Cerro de Monserrate</item>
+        <item>Cerro de Monserrate</item>
+        <item>Cerro de Monserrate</item>
+        <item>Cerro de Monserrate</item>
+
+
+
+    </string-array>
+</resources>
