@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/lista"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
-
-    <android.support.v7.widget.CardView
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="408dp"
         android:layout_height="108dp"
         android:layout_marginTop="8dp"
@@ -16,55 +10,54 @@
         app:cardCornerRadius="20dp"
         app:cardElevation="@dimen/cardview_compat_inset_shadow">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="92dp"
-                android:layout_height="92dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="11dp"
-                android:layout_marginLeft="11dp"
-                android:layout_marginTop="8dp"
-                android:background="@mipmap/ic_launcher"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="16dp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
 
-            <TextView
-                android:id="@+id/nombre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="19dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="8dp"
-                android:layout_toEndOf="@id/imageView"
-                android:layout_toRightOf="@id/imageView"
-                android:fontFamily="@string/text_font"
-                android:text="Name"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/white"
-                tools:layout_editor_absoluteX="119dp"
-                tools:layout_editor_absoluteY="16dp" />
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/imageView"
+            android:layout_toRightOf="@id/imageView"
+            android:fontFamily="@string/text_font"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="16dp" />
 
-            <TextView
-                android:id="@+id/descripcion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/nombre"
-                android:layout_marginStart="18dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="5dp"
-                android:layout_toEndOf="@id/imageView"
-                android:layout_toRightOf="@id/imageView"
-                android:fontFamily="@string/text_font"
-                android:text="Description"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/white"
-                tools:layout_editor_absoluteX="119dp"
-                tools:layout_editor_absoluteY="51dp" />
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nombre"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/imageView"
+            android:layout_toRightOf="@id/imageView"
+            android:fontFamily="@string/text_font"
+            android:text="Description"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="51dp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
 
-</LinearLayout>
