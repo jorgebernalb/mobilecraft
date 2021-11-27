@@ -1,9 +1,9 @@
 package com.example.mobilecraft
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.LinearLayout
@@ -21,17 +21,22 @@ class MainActivity : AppCompatActivity() {
 
 
         recycler.hasFixedSize()
-        recycler.layoutManager = LinearLayoutManager(this)
+        recycler.layoutManager =
+            LinearLayoutManager(this)
         recycler.adapter = adapter
     }
 
     private fun lugares(): MutableList<LugarModel> {
         var lugaresModels : MutableList<LugarModel> = ArrayList()
 
-        lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota"))
-        lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota"))
-        lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota"))
-        lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota"))
+        lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Monserrate_Sanctuary.JPG/1280px-Monserrate_Sanctuary.JPG"))
+        lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Monserrate_Sanctuary.JPG/1280px-Monserrate_Sanctuary.JPG"))
+        lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Monserrate_Sanctuary.JPG/1280px-Monserrate_Sanctuary.JPG"))
+        lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Monserrate_Sanctuary.JPG/1280px-Monserrate_Sanctuary.JPG"))
 
     return lugaresModels
     }

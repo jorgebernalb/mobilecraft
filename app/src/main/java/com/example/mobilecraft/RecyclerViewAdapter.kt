@@ -1,11 +1,13 @@
 package com.example.mobilecraft
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 
 
 //extiende de ecyclerViewAdapter que recibe el REciclerVireAdapter.ViewHolder
@@ -18,13 +20,16 @@ class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(
         this.context = context
     } //constructor
 
-    class ViewHolder(view: View):RecyclerView.ViewHolder(view) {
+    class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
 //view de tipo view extiende
         val nombre:TextView
         val descripcion:TextView
+        val imageUrl:ImageView
         init {
             nombre = view.findViewById(R.id.nombre)
             descripcion = view.findViewById(R.id.descripcion)
+            imageUrl = view.findViewById(R.id.imageView)
+
             }
 
     }
@@ -37,6 +42,7 @@ class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) { //pasarle la infomacion  a los componentes en este caos un modelo
         holder.nombre.text= lugares[position].nombre
         holder.descripcion.text = lugares[position].descripcion
+        Glide.with(context).load(lugares[position].imgUrl).into(holder.imageUrl)
 
     }
 

@@ -1,3 +1,3 @@
 package com.example.mobilecraft
 
-data class LugarModel(val nombre:String, val descripcion:String)
+data class LugarModel(val nombre:String, val descripcion:String,val imgUrl:String)
