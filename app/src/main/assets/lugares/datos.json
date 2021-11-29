@@ -1,0 +1,12 @@
+[
+   {
+    "nombre": "Monserrate",
+    "descripcion": "El cerro de Monserrate es el más conocido de los cerros Orientales de Bogotá. Junto a Guadalupe es uno de los cerros tutelares de la ciudad. Monserrate tiene una altitud de 3152 m y se ubica sobre la cordillera oriental. ",
+    "imgUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Monserrate_Sanctuary.JPG/1280px-Monserrate_Sanctuary.JPG"
+  },
+   {
+    "nombre": "Guadalupe",
+    "descripcion": "El cerro de Guadalupe es uno de los más notables cerros orientales de Bogotá. Junto a Monserrate se le conoce como uno de los cerros tutelares de la ciudad, ubicados entre la ciudad y el páramo de Cruz Verde.",
+    "imgUrl" : "https://www.bing.com/th?id=AMMS_9c4a29527bd94ec8e8bf1ecd90afd0de&w=236&h=183&c=8&rs=1&o=5&dpr=2.25&pid=3.1&rm=2"
+  }
+]

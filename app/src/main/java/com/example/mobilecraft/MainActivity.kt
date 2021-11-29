@@ -1,13 +1,14 @@
 package com.example.mobilecraft
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Context
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import android.view.View
-import android.widget.ArrayAdapter
-import android.widget.LinearLayout
-import android.widget.ListView
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import java.io.IOException
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,19 +26,50 @@ class MainActivity : AppCompatActivity() {
             LinearLayoutManager(this)
         recycler.adapter = adapter
     }
+    //@Throws(IOException::class)
+    fun readJsonAsset(context: Context,fileName: String): String? {
+        val jsonString: String
+        try {
+            jsonString = context.assets.open(fileName).bufferedReader().use { it.readText() }
+        } catch (ioException: IOException) {
+            ioException.printStackTrace()
+            return null
+        }
+        return jsonString
+
+    }
+
+    fun convertirjson(jsonString:String?): List<LugarModel> {
+        val gson = Gson()
+        val listlugarType = object : TypeToken<List<LugarModel>>() {}.type
+        var lugares: List<LugarModel> = gson.fromJson(jsonString, listlugarType)
+
+        return  lugares
+    }
+
 
     private fun lugares(): MutableList<LugarModel> {
         var lugaresModels : MutableList<LugarModel> = ArrayList()
+        var datos = readJsonAsset(applicationContext, "lugares/datos.json")
+       // println(datos + "---------------" + "$datos")
+        var map = convertirjson(datos)
 
-        lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota",
+        for (dat in map) {
+           println(dat)
+            lugaresModels.add(dat)
+        }
+
+
+        /*lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Monserrate_Sanctuary.JPG/1280px-Monserrate_Sanctuary.JPG"))
         lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Monserrate_Sanctuary.JPG/1280px-Monserrate_Sanctuary.JPG"))
         lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Monserrate_Sanctuary.JPG/1280px-Monserrate_Sanctuary.JPG"))
         lugaresModels.add(LugarModel("MOnserrate",  "Es una iglesia hubicada en los cerros de bogota",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Monserrate_Sanctuary.JPG/1280px-Monserrate_Sanctuary.JPG"))
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Monserrate_Sanctuary.JPG/1280px-Monserrate_Sanctuary.JPG"))*/
 
     return lugaresModels
     }
+
 }
