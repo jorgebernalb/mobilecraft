@@ -1,0 +1,33 @@
+[
+  {
+    "nombre": "Monserrate",
+    "description": "El cerro de Monserrate es el más conocido de los cerros Orientales de Bogotá. Junto a Guadalupe es uno de los cerros tutelares de la ciudad. Monserrate tiene una altitud de 3152 m y se ubica sobre la cordillera oriental.",
+    "punctuacion": "Puntuación: 4.8",
+    "imgURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Monserrate_Sanctuary.JPG/1280px-Monserrate_Sanctuary.JPG"
+  },
+  {
+    "nombre": "Guadalupe",
+    "description": "El cerro de Guadalupe es uno de los más notables cerros orientales de Bogotá. Junto a Monserrate se le conoce como uno de los cerros tutelares de la ciudad, ubicados entre la ciudad y el páramo de Cruz Verde.",
+    "punctuacion": "Puntuación: 4.1",
+    "imgURL": "https://www.bing.com/th?id=AMMS_9c4a29527bd94ec8e8bf1ecd90afd0de&w=236&h=183&c=8&rs=1&o=5&dpr=2.25&pid=3.1&rm=2"
+  },
+  {
+    "nombre": "Ciudad Amurallada",
+    "description": "La Ciudad Amurallada es el centro histórico de la ciudad de Cartagena de Indias y ha sido declarado tanto patrimonio nacional de Colombia como Patrimonio de la Humanidad. Aquí vivían los nobles y las personas importantes en la época de la Colonia.\n\nAl recorrer la Ciudad Amurallada podemos encontrar el Palacio de la Inquisición, el Museo del Oro Zenú y elMuseo de Arte Moderno. También la Plaza de los Coches que presenta un recorrido por las casonas coloniales y por la estatua de Pedro de Heredia, la Iglesia y el Convento de San Pedro de Claver y la Alcaldía Mayor, entre otros edificios históricos perfectamente conservados de Cartagena de Indias.",
+    "punctuacion": "Puntuación: 4.8",
+    "imgURL": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/c1/8c/e6/em-cima-da-muaralha.jpg?w=1200&h=-1&s=1"
+  },
+  {
+    "nombre": "Gran Malecón",
+    "description": "Malecón ubicado sobre ribera del río Magdalena con hermosos paisajes del río y el Vía Parque Isla Salamanca. Es el espacio ideal para las familias que buscan disfrutar de una experiencia al aire libre y en contacto directo con las riquezas naturales del entorno. Incluye corredor verde, parque para niños, ciclo rutas y una variada oferta gastronómica.",
+    "punctuacion": "Puntuación: 4.3",
+    "imgURL": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/e3/fd/a5/sector-recreodeportivo.jpg?w=1200&h=-1&s=1"
+  },
+  {
+    "nombre": "Nabusimake",
+    "description": "En la oscuridad fertil del Universo cuando todo exitia en Anugwe, el Universo se expandia hacia todaas la direcciones y mientras la Luz penetraba La Oscuridad todo el Anugwe se Materializaba y el Quinto Mundo comienza a crearce en forma espiral, en anillos concentrico que le dan vida Al Umunukunu, El Corazon del Mundo, Sierra Nevada. Nabusimake Territorio Ancestral de Los IJKU.",
+    "punctuacion": "Puntuación: 4.7",
+    "imgURL": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/05/9f/c2/viviendas-arhuacas.jpg?w=1200&h=-1&s=1"
+  }
+d
+]
